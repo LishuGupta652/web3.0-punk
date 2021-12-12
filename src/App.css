@@ -53,3 +53,14 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.App {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+.header {
+  height: 100px;
+  display: flex;
+}
