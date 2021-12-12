@@ -1,9 +1,12 @@
 import React from "react";
+import punk from "../assets/header/cryptopunk-logo.png";
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>header</h1>
+      <div className="logoContainer">
+        <img src={punk} alt="" />
+      </div>
     </div>
   );
 };
