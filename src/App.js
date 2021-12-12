@@ -14,16 +14,18 @@ function App() {
       },
     };
     const getMyNfts = () => {
-      const openseaData = axios.get(
-        "https://api.opensea.io/api/v1/assets?asset_contract_address=0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb&format=json&limit=20&offset=0",
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-          },
-        }
-      );
-      console.log(openseaData);
+      axios.defaults.baseURL = "https://testnets.opensea.io";
+      axios.defaults.headers.post["Content-Type"] =
+        "application/json;charset=utf-8";
+      axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+      const openseaData = fetch(
+        "/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802"
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => {});
     };
     getMyNfts();
   }, []);
