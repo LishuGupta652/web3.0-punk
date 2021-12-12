@@ -63,4 +63,39 @@ a {
 .header {
   height: 100px;
   display: flex;
+  justify-content: space-between;
+  align-items: cetner;
+}
+.header > div {
+  margin: 10px;
+}
+.punklogo {
+  width: 200px;
+}
+
+.searchBar {
+  background-color: #1c1c1e;
+  height: 50px;
+  flex: 1;
+  display: flex;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.searchIconContainer {
+  margin: 20px;
+}
+.searchInput {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+.headerItems {
+  display: flex;
+}
+.headerItems > p {
+  margin: 10px;
 }
