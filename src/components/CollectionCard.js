@@ -1,6 +1,7 @@
 import React from "react";
 import weth from "../assets/weth.png";
 const CollectionCard = ({ id, name, traits, image }) => {
+  console.log(id);
   return (
     <div className="collectionCard">
       <img src={image} alt="" />
