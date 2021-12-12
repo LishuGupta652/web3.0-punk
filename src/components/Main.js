@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="mainContent">
-        <div className="punkHighLigh">
+        <div className="punkHighlights">
           <div className="punkContainer">
             <img
               src="https://nftlabs.mypinata.cloud/ipfs/bafkreiasgnibw32isqfyjnv5lhj4wxzp6izayculjlo4ampmmfla3j4tj4"
