@@ -7,9 +7,16 @@ import axios from "axios";
 function App() {
   const [punkListData, setPunkListData] = useState([]);
   useEffect(() => {
+    const config = {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+      },
+    };
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        "https://testnets.opensea.io/api/v1/assets?asset_contract_address='0x512C67ecE7670b9E192291e64912cAdd51B53802'"
+        "https://testnets.opensea.io/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802&order_direction=asce/",
+        config
       );
       console.log(openseaData);
       setPunkListData(openseaData.data.assets);
