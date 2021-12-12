@@ -15,7 +15,7 @@ function App() {
     };
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        "https://testnets.opensea.io/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802&order_direction=asce/",
+        "https://testnets-api.opensea.io/assets?order_direction=desc&offset=0&limit=20",
         {
           headers: {
             "Access-Control-Allow-Origin": "*",
