@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import PunkList from "./components/PunkList";
+import Main from "./components/Main";
 
 function App() {
   const [punkListData, setPunkListData] = useState([]);
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Main />
       <PunkList punkListData={punkListData} />
     </div>
   );
