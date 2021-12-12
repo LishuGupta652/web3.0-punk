@@ -29,6 +29,8 @@ const Header = () => {
           <img src={themeIcon} alt="" className="themeImage" />
         </div>
       </div>
+
+      <div className="loginButton">GET IN</div>
     </div>
   );
 };
