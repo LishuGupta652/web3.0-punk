@@ -1,6 +1,6 @@
 import React from "react";
-import weth from "../assets/images/weth.png";
-const CollectionCard = ({ id, name, traits, iamge }) => {
+import weth from "../assets/weth.png";
+const CollectionCard = ({ id, name, traits, image }) => {
   return (
     <div className="collectionCard">
       <img src={image} alt="" />

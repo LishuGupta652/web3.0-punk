@@ -6,7 +6,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <CollectionCard />
+      <CollectionCard
+        id={0}
+        name={"gitman"}
+        traits={[{ value: 7 }]}
+        image="https://nftlabs.mypinata.cloud/ipfs/bafkreiasgnibw32isqfyjnv5lhj4wxzp6izayculjlo4ampmmfla3j4tj4"
+      />
     </div>
   );
 }
