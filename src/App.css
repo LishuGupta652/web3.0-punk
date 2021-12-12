@@ -233,3 +233,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.main .punkImageLeft,
+.ownerImage {
+  width: 200px;
+}

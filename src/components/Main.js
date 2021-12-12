@@ -9,6 +9,7 @@ const Main = () => {
         <div className="punkHighlights">
           <div className="punkContainer">
             <img
+              className="punkImageLeft"
               src="https://nftlabs.mypinata.cloud/ipfs/bafkreiasgnibw32isqfyjnv5lhj4wxzp6izayculjlo4ampmmfla3j4tj4"
               alt=""
             />
@@ -21,6 +22,7 @@ const Main = () => {
         <div className="ownerDetails">
           <div className="ownerImageContainer">
             <img
+              className="ownerImage"
               src={
                 "https://nftlabs.mypinata.cloud/ipfs/bafkreiasgnibw32isqfyjnv5lhj4wxzp6izayculjlo4ampmmfla3j4tj4"
               }
