@@ -147,7 +147,7 @@ body {
 .collectionCard {
   background-color: #1a1c1e;
   border-radius: 10px;
-  width: 300px;
+  min-width: 300px;
   height: 500px;
   margin-right: 30px;
   margin: 20px;
@@ -180,4 +180,29 @@ body {
 }
 .id {
   color: #e87c1e;
+}
+.punkList {
+  display: flex;
+  overflow-x: scroll;
+}
+
+/* width */
+.punkList::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+.punkList::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* Handle */
+.punkList::-webkit-scrollbar-thumb {
+  background: #525252;
+}
+
+/* Handle on hover */
+.punkList::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
