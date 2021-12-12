@@ -13,9 +13,9 @@ function App() {
         "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
       },
     };
-    const getMyNfts = async () => {
-      const openseaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?order_direction=desc&offset=0&limit=20",
+    const getMyNfts = () => {
+      const openseaData = axios.get(
+        "https://api.opensea.io/api/v1/assets?asset_contract_address=0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb&format=json&limit=20&offset=0",
         {
           headers: {
             "Access-Control-Allow-Origin": "*",
@@ -24,7 +24,6 @@ function App() {
         }
       );
       console.log(openseaData);
-      setPunkListData(openseaData.data.assets);
     };
     getMyNfts();
   }, []);
