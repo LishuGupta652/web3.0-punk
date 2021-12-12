@@ -13,22 +13,12 @@ function App() {
         "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
       },
     };
-    const getMyNfts = () => {
-      axios.defaults.baseURL = "https://testnets.opensea.io";
-      axios.defaults.headers.post["Content-Type"] =
-        "application/json;charset=utf-8";
-      axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
-      const openseaData = fetch(
-        "https://testnets.opensea.io/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802",
-        config
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-        })
-        .catch((err) => {});
+    const getMyNfts = async () => {
+      const openseaData = await axios.get(
+        "http://testnets-api.opensea.io/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802"
+      );
     };
-    getMyNfts();
+    return getMyNfts();
   }, []);
   return (
     <div className="App">
