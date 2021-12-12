@@ -15,8 +15,9 @@ function App() {
     };
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        "http://testnets-api.opensea.io/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802"
+        "https://testnets-api.opensea.io/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802"
       );
+      console.log(openseaData.data.assets);
     };
     return getMyNfts();
   }, []);
