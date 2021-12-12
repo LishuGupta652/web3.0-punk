@@ -128,3 +128,20 @@ a {
   color: black;
   font-weight: bold;
 }
+
+/* collection card */
+.collectionCard {
+  background-color: #1a1c1e;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  margin-right: 30px;
+  margin: 20px;
+}
+.collectionCard > img {
+  width: 100%;
+}
+.wethImage {
+  height: 23px;
+  width: 15px;
+}
