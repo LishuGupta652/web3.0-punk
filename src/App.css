@@ -53,12 +53,16 @@ a {
   color: white;
   text-decoration: none;
 }
-
+body {
+  background-color: black;
+}
 .App {
   background-color: black;
   color: white;
   min-height: 100vh;
   max-width: 100vw;
+  width: 95%;
+  margin: 0 auto;
 }
 .header {
   height: 100px;
@@ -140,6 +144,8 @@ a {
 }
 .collectionCard > img {
   width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .wethImage {
   height: 23px;
