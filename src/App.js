@@ -16,7 +16,12 @@ function App() {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
         "https://testnets.opensea.io/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802&order_direction=asce/",
-        config
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+          },
+        }
       );
       console.log(openseaData);
       setPunkListData(openseaData.data.assets);
