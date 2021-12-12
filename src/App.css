@@ -145,3 +145,23 @@ a {
   height: 23px;
   width: 15px;
 }
+.price {
+  margin-left: 5px;
+  width: 15px;
+}
+.priceContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.details {
+  padding: 10px;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.id {
+  color: #e87c1e;
+}
