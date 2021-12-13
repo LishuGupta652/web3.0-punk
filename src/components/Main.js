@@ -9,17 +9,18 @@ const Main = () => {
         <div className="punkHighlights">
           <div className="punkContainer">
             <img
-              className="punkImageLeft"
+              className="selectedPunk"
               src="https://nftlabs.mypinata.cloud/ipfs/bafkreiasgnibw32isqfyjnv5lhj4wxzp6izayculjlo4ampmmfla3j4tj4"
               alt=""
             />
           </div>
         </div>
+
         <div className="punkDetails" style={{ color: "#fff" }}>
           <div className="title">Lishu gupta</div>
-          <div className="itemNumber">{"#3"}</div>
+          <div className="itemNumber">-#3</div>
         </div>
-        <div className="ownerDetails">
+        <div className="owner">
           <div className="ownerImageContainer">
             <img
               className="ownerImage"
