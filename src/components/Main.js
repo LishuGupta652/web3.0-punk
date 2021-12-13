@@ -16,7 +16,7 @@ const Main = () => {
           </div>
         </div>
         <div className="punkDetails" style={{ color: "#fff" }}>
-          <div className="title">{"lishugupta"}</div>
+          <div className="title">Lishu gupta</div>
           <div className="itemNumber">{"#3"}</div>
         </div>
         <div className="ownerDetails">
@@ -34,14 +34,16 @@ const Main = () => {
               <div>0x512C67ecE7670b9E192291e64912cAdd51B53802</div>
               <div className="ownerHandle">@lishugupta652</div>
             </div>
-            <div className="ownerLink">
-              <img src={instagramLogo} alt="" />
-            </div>
-            <div className="ownerLink">
-              <img src={twitterLogo} alt="" />
-            </div>
-            <div className="ownerLink">
-              <img src={moreIcon} alt="" />
+            <div className="socialContainer">
+              <div className="ownerLink">
+                <img src={instagramLogo} alt="" />
+              </div>
+              <div className="ownerLink">
+                <img src={twitterLogo} alt="" />
+              </div>
+              <div className="ownerLink">
+                <img src={moreIcon} alt="" />
+              </div>
             </div>
           </div>
         </div>

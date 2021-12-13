@@ -236,4 +236,17 @@ body {
 .main .punkImageLeft,
 .ownerImage {
   width: 200px;
+  border-radius: 20px;
+}
+
+.ownerNameAndHandle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ownerLink img {
+  width: 24px;
+}
+.socialContainer {
+  display: flex;
 }
