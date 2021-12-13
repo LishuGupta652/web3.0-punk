@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Main punkListData={punkListData} selectedPunk={selectedPunk} />
       <PunkList punkListData={punkListData} setSelectedPunk={setSelectedPunk} />
     </div>
   );

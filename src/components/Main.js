@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import instagramLogo from "../assets/owner/instagram.png";
 import twitterLogo from "../assets/owner/twitter.png";
 import moreIcon from "../assets/owner/more.png";
-const Main = () => {
+const Main = ({ selectedPunk, punkListData }) => {
+  const [activePunk, setActivePunk] = useState(punkListData[0]);
+
+  useEffect(() => {
+    setActivePunk(punkListData[selectedPunk]);
+  }, [punkListData, selectedPunk]);
+
   return (
     <div className="main">
       <div className="mainContent">
@@ -10,7 +16,7 @@ const Main = () => {
           <div className="punkContainer">
             <img
               className="selectedPunk"
-              src="https://nftlabs.mypinata.cloud/ipfs/bafkreiasgnibw32isqfyjnv5lhj4wxzp6izayculjlo4ampmmfla3j4tj4"
+              src={activePunk.image_original_url}
               alt=""
             />
           </div>
