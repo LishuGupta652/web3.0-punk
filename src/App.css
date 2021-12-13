@@ -252,6 +252,13 @@ body {
 .owner > div {
   margin: 0 5px;
 }
+.ownerImageContainer {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  object-fit: contain;
+}
 .title {
   font-size: 96px;
   font-weight: bold;
