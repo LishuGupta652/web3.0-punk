@@ -8,6 +8,7 @@ import Main from "./components/Main";
 
 function App() {
   const [punkListData, setPunkListData] = useState([]);
+  const [selectedPunk, setSelectedPunk] = useState(0);
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
@@ -22,7 +23,7 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      <PunkList punkListData={punkListData} />
+      <PunkList punkListData={punkListData} setSelectedPunk={setSelectedPunk} />
     </div>
   );
 }
