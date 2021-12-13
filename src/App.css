@@ -259,6 +259,30 @@ body {
   overflow: hidden;
   object-fit: contain;
 }
+.ownerImageContainer > img {
+  height: 100%;
+  width: 100%;
+}
+.ownerDetails {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.ownerHandle {
+  color: #00ebfe;
+}
+.ownerLink {
+  padding: 12px;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #fff;
+  margin: 0 0 0 10px;
+}
+.ownerLink > img {
+  height: 100%;
+  width: 100%;
+}
 .title {
   font-size: 96px;
   font-weight: bold;
