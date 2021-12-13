@@ -21,6 +21,66 @@ const PunkList = ({ punkListData, setSelectedPunk }) => {
             </div>
           );
         })}
+        {punkListData.map((punk) => {
+          return (
+            <div
+              onClick={() => setSelectedPunk(punk.token_id)}
+              key={punk.token_id}
+            >
+              <CollectionCard
+                id={punk.token_id}
+                name={punk.name}
+                traits={punk.traits}
+                image={punk.image_original_url}
+              />
+            </div>
+          );
+        })}
+        {punkListData.map((punk) => {
+          return (
+            <div
+              onClick={() => setSelectedPunk(punk.token_id)}
+              key={punk.token_id}
+            >
+              <CollectionCard
+                id={punk.token_id}
+                name={punk.name}
+                traits={punk.traits}
+                image={punk.image_original_url}
+              />
+            </div>
+          );
+        })}
+        {punkListData.map((punk) => {
+          return (
+            <div
+              onClick={() => setSelectedPunk(punk.token_id)}
+              key={punk.token_id}
+            >
+              <CollectionCard
+                id={punk.token_id}
+                name={punk.name}
+                traits={punk.traits}
+                image={punk.image_original_url}
+              />
+            </div>
+          );
+        })}
+        {punkListData.map((punk) => {
+          return (
+            <div
+              onClick={() => setSelectedPunk(punk.token_id)}
+              key={punk.token_id}
+            >
+              <CollectionCard
+                id={punk.token_id}
+                name={punk.name}
+                traits={punk.traits}
+                image={punk.image_original_url}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

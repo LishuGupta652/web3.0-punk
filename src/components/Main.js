@@ -23,34 +23,30 @@ const Main = ({ selectedPunk, punkListData }) => {
         </div>
 
         <div className="punkDetails" style={{ color: "#fff" }}>
-          <div className="title">Lishu gupta</div>
-          <div className="itemNumber">-#3</div>
+          <div className="title">{activePunk.name}</div>
+          <div className="itemNumber">-#{activePunk.token_id}</div>
         </div>
         <div className="owner">
           <div className="ownerImageContainer">
             <img
               className="ownerImage"
-              src={
-                "https://nftlabs.mypinata.cloud/ipfs/bafkreiasgnibw32isqfyjnv5lhj4wxzp6izayculjlo4ampmmfla3j4tj4"
-              }
+              src={activePunk.owner.profile_img_url}
               alt=""
             />
           </div>
           <div className="ownerDetails">
             <div className="ownerNameAndHandle">
-              <div>0x512C67ecE7670b9E192291e64912cAdd51B53802</div>
+              <div>{activePunk.owner.address}</div>
               <div className="ownerHandle">@lishugupta652</div>
             </div>
-            <div className="socialContainer">
-              <div className="ownerLink">
-                <img src={instagramLogo} alt="" />
-              </div>
-              <div className="ownerLink">
-                <img src={twitterLogo} alt="" />
-              </div>
-              <div className="ownerLink">
-                <img src={moreIcon} alt="" />
-              </div>
+            <div className="ownerLink">
+              <img src={instagramLogo} alt="" />
+            </div>
+            <div className="ownerLink">
+              <img src={twitterLogo} alt="" />
+            </div>
+            <div className="ownerLink">
+              <img src={moreIcon} alt="" />
             </div>
           </div>
         </div>
