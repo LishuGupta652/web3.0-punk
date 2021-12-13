@@ -228,25 +228,36 @@ body {
   display: flex;
   margin-right: 20px;
 }
+.selectedPunk {
+  object-fit: contain;
+  max-width: min(30vw, 40vh);
+  max-height: 30vw;
+}
 .punkDetails {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 0.75;
 }
-.main .punkImageLeft,
-.ownerImage {
-  width: 200px;
-  border-radius: 20px;
+.itemNumber {
+  color: #a1a5b0;
+  font-size: 72px;
+  align-self: center;
 }
-
+.owner {
+  display: flex;
+  margin: 10px 0;
+  height: 50px;
+}
+.owner > div {
+  margin: 0 5px;
+}
+.title {
+  font-size: 96px;
+  font-weight: bold;
+}
 .ownerNameAndHandle {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.ownerLink img {
-  width: 24px;
-}
-.socialContainer {
-  display: flex;
 }
