@@ -184,6 +184,7 @@ body {
 .punkList {
   display: flex;
   overflow-x: scroll;
+  margin-bottom: 50px;
 }
 
 /* width */
@@ -241,8 +242,7 @@ body {
 }
 .itemNumber {
   color: #a1a5b0;
-  font-size: 72px;
-  align-self: center;
+  font-size: 30px;
 }
 .owner {
   display: flex;
@@ -284,7 +284,8 @@ body {
   width: 100%;
 }
 .title {
-  font-size: 96px;
+  font-size: 50px;
+  text-transform: uppercase;
   font-weight: bold;
 }
 .ownerNameAndHandle {
