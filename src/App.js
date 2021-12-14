@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0x512C67ecE7670b9E192291e64912cAdd51B53802"
+        "https://gitman-restapi.herokuapp.com/api/nft/v1"
       );
       setPunkListData(openseaData.data.assets);
     };
