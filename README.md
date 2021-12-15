@@ -10,6 +10,7 @@
 ### Features
 
 - Reactjs, styled Compnent, axios.
+- Backend: Nodejs, Express, MongoDB.
 - metamask
 - nft
 
